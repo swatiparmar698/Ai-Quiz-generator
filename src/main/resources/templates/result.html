@@ -1,0 +1,23 @@
+<html>
+	<body>
+		<center>
+			<table border="5">
+		<tr>
+			<td>qno</td>
+			<td>question</td>
+			<td>ans</td>
+			<td>userAns</td>
+			<td>Marks</td>
+			</tr>
+			<tr th:each="q:${session.list}">
+				<td th:text="${q.qno}"></td>
+				<td th:text="${q.question}"></td>
+				<td th:text="${q.ans}"></td>
+				<td th:text="${q.userAns}"></td>
+				<td th:text="${q.marks}"></td>
+			</tr>
+			</table>
+			total=><h1 th:text="${total}"></h1>
+			</center>
+	</body>
+	</html>

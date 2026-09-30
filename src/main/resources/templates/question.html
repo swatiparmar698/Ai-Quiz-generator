@@ -1,0 +1,12 @@
+<html>
+	<body>
+		Q.<span th:text="${current_question.qno}"></span>
+	<span th:text="${current_question.question}"></span>
+	<span th:text="${current_question.ans}"></span>
+	<form action="next">
+		True<input type = "radio" value ="true" name="userAns">
+		False<input type = "radio" value ="false" name="userAns">
+		<input type="submit" value="Next">
+	</form>
+		</body>
+</html>
